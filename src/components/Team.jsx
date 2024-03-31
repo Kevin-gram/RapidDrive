@@ -108,21 +108,20 @@ export default () => {
       
   ];
   return (
-      <div className=" p-4  latest bg-navy pt-5 h-full" id="Team">
+      <div className="h-[52vh] p-4 latest bg-navy pt-5 lg:h-full " id="Team">
           <div className='flex flex-col lg:flex-row'>
               <div className="lg:w-1/2 ml-10 text-white">
                   <div>
                   
                   </div>
-                  <h1 className="text-3xl font-bold pt-4 ">OUR TEAM</h1>
+                  <h1 className="text-2xl  lg:3xl font-bold  ">OUR TEAM</h1>
               </div>
               <div className="lg:w-1/2 px-10 text-white">
-                  <p className="pt-10 text-xl border-t-2">Our team is the heart and soul of everything we do. Comprised of passionate individuals with diverse backgrounds and expertise, we come together to achieve one common goal: delivering exceptional results for our clients..</p>
+                  <p className="pt-10 text-l lg:text-xl border-t-2 md:text-2xl ">Our team is the heart and soul of everything we do. Comprised of passionate individuals with diverse backgrounds and expertise, we come together to achieve one common goal: delivering exceptional results for our clients..</p>
               </div>
           </div>
 
-          <hr className="w-72" />
-
+         
 
           <Swiper
               // install Swiper modules
@@ -138,11 +137,11 @@ export default () => {
           >
               {images.map((image) => {
                   return (
-                      <SwiperSlide className="mt-5 text-white">
+                      <SwiperSlide className="mt-5 md:text-xl text-white">
                           <img src={image.img} alt="" className="rounded-t-xl"  style={{width: '70vh', height: '35vh',objectFit:'contain'}}/>
                           <h3 className="ml-1">{image.Name}</h3>
                           <h4 className="ml-1">{image.title}</h4>
-                          <p className="font-sans text-sm ml-1">{image.description}</p>
+                          <p className="font-sans text-l ml-1 ">{image.description}</p>
                       </SwiperSlide>
                   );
               })}

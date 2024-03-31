@@ -22,9 +22,12 @@ function ContactForm() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-navy to-dark  min-h-screen flex flex-col justify-center items-center">
+    <div class="bg-gradient-to-b from-navy to-dark min-h-screen flex flex-col justify-center items-center w-full lg:w-[100%] xl:w-[100%]">
+
+
         <h3 className='font-abc text-white text-3xl '>RapiDriver</h3>
-      <div className="max-w-md w-[92vh] bg- p-8 rounded-lg shadow-sm shadow-white">
+        <div className="max-w-lg sm:w-full md:w-4/5 lg:w-3/5 xl:w-2/5 p-8 rounded-lg shadow-sm shadow-white">
+
         <h2 className="text-3xl font-semibold mb-4 text-center">Contact Us</h2>
         <form onSubmit={handleSubmit} className=''>
           <div className="mb-4">
@@ -76,7 +79,7 @@ function ContactForm() {
       <FaSquareInstagram />
       <FaLinkedinIn />
       </div>
-      <footer className="mt-8 text-center text-gray-500">
+      <footer className=" mt-8  text-center text-gray-500 sm:w-2/3">
         <p className='font-xyz'>&copy; 2024 <span className='font-abc'>RapiDriv</span>. All rights reserved.</p>
       </footer>
     </div>

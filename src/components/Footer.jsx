@@ -22,10 +22,10 @@ function ContactForm() {
   };
 
   return (
-    <div class="bg-gradient-to-b from-navy to-dark min-h-screen flex flex-col justify-center items-center w-full lg:w-[100%] xl:w-[100%]">
+    <div class="bg-gradient-to-b from-navy to-dark lg:h-full lg:pt-10 xl:h-screen flex flex-col justify-center items-center w-full lg:w-[100%] xl:w-[100%]">
 
 
-        <h3 className='font-abc text-white text-3xl '>RapiDriver</h3>
+        <h3 className='font-abc text-white text-3xl lg:text-4xl'>RapiDriver</h3>
         <div className="max-w-lg sm:w-full md:w-4/5 lg:w-3/5 xl:w-2/5 p-8 rounded-lg shadow-sm shadow-white">
 
         <h2 className="text-3xl font-semibold mb-4 text-center">Contact Us</h2>

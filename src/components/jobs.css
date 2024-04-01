@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.job {
+    position: relative; /* Ensure proper positioning of the pseudo-element */
+    background-image: url(/src/images/screw-4929711_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.job::before {
+    content: ''; /* Ensure the pseudo-element has content to render */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 51, 40, 0.4); /* Navy color #013328 with 50% opacity */
+    z-index: 1; /* Ensure the overlay appears above the background image */
+}

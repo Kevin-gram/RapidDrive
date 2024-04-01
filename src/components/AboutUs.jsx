@@ -3,7 +3,7 @@ import image1 from '../images/porsche-911-gt3-rs-7779707_1280.png';
 import image2 from '../images/satellite-2318506_1280.png';
 export default function AboutUs() {
     return (
-        <div class=" h-[52vh] md:h-[42vh] flex justify-center items-center lg:h-screen bg-gradient-to-b from-black to-navy text-white 
+        <div class=" h-[52vh] md:h-[42vh] pb-10 flex justify-center items-center lg:h-full xl:h-screen bg-gradient-to-b from-black to-navy text-white 
         ">
         <div>
           <h1 class=" lg:text-6xl  md:text-5xl md:pt-0 text-center pb-4 pt-5 font-abc">Rapid Driver</h1>

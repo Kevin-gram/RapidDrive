@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../components/jobs.css'
 const JobListingPage = ({ jobs }) => {
   const [showAll, setShowAll] = useState(false);
 
@@ -10,19 +10,21 @@ const JobListingPage = ({ jobs }) => {
   };
 
   return (
-    <div className="bg-navy text-white text-center min-h-screen flex flex-col items-center justify-center py-8">
-      <div className="max-w-4xl w-full p-8 rounded-lg shadow-lg">
+    <div className="bg-navy job text-white text-center min-h-screen flex flex-col items-center justify-center py-8">
+      <div className="max-w-4xl w-full p-8 rounded-lg shadow-lg z-10">
         <h1 className="text-4xl font-bold mb-8 font-xyz">Driver Job Listings</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
           {visibleJobs.map((job, index) => (
-            <div key={index} className="bg-gray-200 p-6 rounded-lg text-black">
+            <div key={index} className="bg-gray-200 p-6 rounded-lg text-black transition-transform transform hover:scale-90">
               <h2 className="text-xl font-bold mb-2">{job.companyName}</h2>
               <p className="text-lg mb-2">{job.category}</p>
               <p>Age Range: {job.ageRange}</p>
               <p>Experience Required: {job.experience}</p>
               <p>Salary: {job.salary}</p>
               <p>{job.fullTime ? 'Full Time' : 'Part Time'}</p>
+             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4'> Apply </button>
             </div>
+            
           ))}
         </div>
         {!showAll && jobs.length > 6 && (
@@ -104,7 +106,7 @@ const jobs = [
     salary: '$60,000 - $80,000',
     fullTime: false,
   },
-  // Add more job listings here
+ 
 ];
 
 const JobPage = () => {

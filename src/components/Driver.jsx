@@ -10,9 +10,12 @@ const DriverProfilePage = ({ drivers }) => {
   };
 
   return (
-    <div className="bg-navy text-black min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-navy text-black min-h-screen flex flex-col items-center justify-center w-full pt-20">
       <div className="max-w-4xl w-full p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold mb-8 text-center font-xyz">Driver Profiles</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center font-xyz text-white">Driver Profiles</h1>
+        <p class="text-white bg-green w-full lg:h-32 rounded-lg sm:text-medium  lg:text-xl h-38 py-28 mb-10 text-center md:text-xl flex flex-col justify-center mt-5 font-xyz align-center ">
+              <strong className='font-bold pb-2'>Vision</strong>At Rapid Driver, our professional drivers are the backbone of our service, embodying reliability, expertise, and dedication. With rigorous screening and training, we ensure they deliver safe and seamless experiences, setting the standard for excellence in transportation services. Join us and experience the difference today..
+            </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
           {visibleDrivers.map((driver, index) => (
             <div key={index} className="bg-white rounded-lg p-6">

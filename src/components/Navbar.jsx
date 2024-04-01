@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <div className="text-white font-xyz px-10 items-center justify-between w-full flex flex-row fixed top-0 right-0 left-0 z-10">
             <div className="w-1/2">
-                <h1 className="text-l font-abc">Rapidriv</h1>
+                <h1 className="text-xl font-abc">Rapidriv</h1>
             </div>
             <div className=" hidden md:flex gap-10 lg:justify-between ">
                 <a href="https://example.com" className="border-b border-gray-500 border-dashed">Home</a>

@@ -11,9 +11,9 @@ import { SiPrintables } from "react-icons/si";
 import { Link } from 'react-router-dom';
 const Aside = () => {
   return (
-    <div className="flex bg-slate-100">
+    <div className="flex bg-navy overflow-hidden">
       <div
-        className="bg-gray-600 mt-5 mb-5 ml-5 w-48 rounded-l-lg p-2 text-white "
+        className="bg-green mt-5 mb-5 ml-5 w-48 rounded-l-lg p-2 text-white "
         style={{ height: '90vh' }}
       >
         <div>
@@ -38,7 +38,7 @@ const Aside = () => {
           <h1>
             <MdAddHomeWork />
           </h1>
-          <h1 className="mx-2 font-sans">Activities</h1>
+          <Link to="/" className="">Home</Link>
         </div>
         <div className="flex items-center text-1xl mt-5 mx-5">
           <h1>
@@ -81,12 +81,12 @@ const Aside = () => {
 
         {/* cards */}
 
-        <div className="cards flex mt-10 mx-12">
+        <div className="cards flex mt-10 mx-12 h-screen ">
           <div className="bg-white w-48 h-32 shadow-2xl relative rounded flex flex-col mx-3">
             <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
               <FaBookReader />
               <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                Bookings
+                Drivers
               </span>
             </h1>
             <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
@@ -98,25 +98,25 @@ const Aside = () => {
                 Team
               </span>
             </h1>
-            <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
+            <h2 className="absolute mt-16 ml-24 text-3xl">0</h2>
           </div>
           <div className="bg-white w-48 h-32 shadow-2xl relative rounded flex flex-col mx-3">
             <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
               <FaUsers />
               <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                users
+                blogs
               </span>
             </h1>
-            <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
+            <h2 className="absolute mt-16 ml-24 text-3xl">3</h2>
           </div>
           <div className="bg-white w-48 h-32 shadow-2xl relative rounded flex flex-col mx-3">
             <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
               <TbTournament />
               <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                Active Tours
+                Companies
               </span>
             </h1>
-            <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
+            <h2 className="absolute mt-16 ml-24 text-3xl">02</h2>
           </div>
         </div>
 

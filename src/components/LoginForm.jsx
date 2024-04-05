@@ -1,6 +1,6 @@
 // LoginForm.js
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -37,7 +37,7 @@ const LoginForm = () => {
       <h1 className='font-abc text-white text-5xl pb-10'>
             Rapid Driver
           </h1>
-      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+      <div className="max-w-md w-full bg-slate-100 p-8 rounded-lg shadow-lg">
         <h2 className="text-black text-3xl font-semibold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit}>
         
@@ -86,7 +86,10 @@ const LoginForm = () => {
             >
               Forgot Password?
             </a>
+            
           </div>
+          <p className='text-center my-5 '>Don't have an account?</p>
+          <Link to="/Signup" className='inline-block align-baseline font-bold text-sm text-black hover:text-blue-800'>SignUp</Link>
         </form>
       </div>
     </div>

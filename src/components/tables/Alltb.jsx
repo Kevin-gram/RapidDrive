@@ -38,7 +38,7 @@ const Aside = () => {
           <h1>
             <MdAddHomeWork />
           </h1>
-          <h1 className="mx-2 font-sans">Activities</h1>
+          <h1 className="mx-2 font-sans">Home</h1>
         </div>
         <div className="flex items-center text-1xl mt-5 mx-5">
           <h1>
@@ -86,7 +86,7 @@ const Aside = () => {
             <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
               <FaBookReader />
               <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                Bookings
+                Jobs
               </span>
             </h1>
             <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
@@ -105,7 +105,7 @@ const Aside = () => {
               <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
                 <FaUsers />
                 <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                  users
+                  Drivers
                 </span>
               </h1>
               <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>
@@ -115,7 +115,7 @@ const Aside = () => {
             <h1 className="text-6xl absolute top-[-30px] mx-5 text-blue-400 flex">
               <TbTournament />
               <span className="text-black text-sm absolute mt-10 ml-24 font-bold">
-                Tours
+                Companies 
               </span>
             </h1>
             <h2 className="absolute mt-16 ml-24 text-3xl">32</h2>

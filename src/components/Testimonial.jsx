@@ -25,8 +25,8 @@ const testimonials = [
 ]
 function TestimonialCard({ name, title, description, image }) {
   return (
-    <div className="max-w-[45vh] mx-auto shadow-lg rounded-lg overflow-hidden bg-dark">
-      <img src={image} alt={name} className="w-full h-auto" />
+    <div className="max-w-[35vh]  mx-auto shadow-lg rounded-lg overflow-hidden bg-dark">
+      <img src={image} alt={name} className="w-72 h-52 " />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-white">{name}</div>
         <div className="text-white text-sm mb-2">{title}</div>
